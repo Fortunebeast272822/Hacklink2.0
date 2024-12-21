@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram</title>
+<style>
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+}
+
+.logo {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.fb-button {
+    background-color: #1877f2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.forgot-password {
+    color: #1877f2;
+    text-decoration: none;
+    margin: 20px 0;
+    display: block;
+}
+
+.login-button {
+    background-color: #0095f6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.signup-link {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer a svg {
+    width: 24px;
+    height: 24px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">Instagram</div>
+    <button class="fb-button">Continue Using Facebook</button>
+    <div class="divider">OR</div>
+    <input type="text" class="input-field" placeholder="Phone number, username or email address">
+    <input type="password" class="input-field" placeholder="Password">
+    <a href="#" class="forgot-password">Forgotten your password?</a>
+    <button class="login-button">Log in</button>
+    <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+</div>
+<div class="footer">
+    <a href="#">🏠</a>
+    <a href="#">📸</a>
+    <a href="#">🎥</a>
+    <a href="#">🔍</a>
+    <a href="#">👤</a>
+</div>
+</body>
+</html>
